@@ -13,7 +13,7 @@ public class Crime {
 
     //Default constructor
     public Crime () {
-        //
+        //Make a new unique id for this particular crime
         mId = UUID.randomUUID();
     }
 
