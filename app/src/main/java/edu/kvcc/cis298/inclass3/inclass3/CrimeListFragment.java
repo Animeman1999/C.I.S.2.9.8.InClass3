@@ -145,12 +145,12 @@ public class CrimeListFragment extends Fragment
         //implementing the onClickListener interface. This will start a new Activity
         @Override
         public void onClick(View v) {
-            //Ask CrimeActivity for an intent that will get the crimeActivity
+            //Ask CrimeXActivity for an intent that will get the crimeXActivity
             //started. The method requires us to pass the Context, which we can
             //get from calling getActivity(), and the id of the crime we want
             // to start the activity with.  Once we have the intent, we call
             //startActivity to start it.
-            Intent intent = CrimeActivity.newInent(getActivity(), mCrime.getId());
+            Intent intent = CrimePagerActivity.newInent(getActivity(), mCrime.getId());
             startActivity(intent);
         }
     }
